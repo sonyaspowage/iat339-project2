@@ -1,0 +1,111 @@
+
+/* 
+	This tutorial draws from "Don't Overthink Grids" available at
+	http://css-tricks.com/dont-overthink-it-grids/
+*/
+
+
+/*
+	With this selector, we are specifying that all objects use
+	the border-box model (not the content-box model)
+*/
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*
+	Here we are using a 'fancy' css selector that is 
+	specifying if the class of an item starts with
+	'col-', then we should apply the styling listed
+*/
+[class^='col-'] {
+	float: left;
+	padding: 0; 
+}
+
+
+/* Define columns */
+
+.col-1of12, .col-2of12, .col-3of12, .col-4of12, .col-5of12, .col-6of12,
+.col-7of12, .col-8of12, .col-9of12, .col-10of12, .col-11of12, .col-12of12 {
+	border: 1px solid red;
+	padding: 0 20px;
+}
+
+.col-1of12 {
+	width: 8.333%;	
+}
+
+.col-2of12 {
+	width: 16.667%;	
+}
+
+.col-3of12 {
+	width: 25%;	
+}
+
+.col-4of12 {
+	width: 33.333%;	
+}
+
+.col-5of12 {
+	width: 41.667%;	
+}
+
+.col-6of12 {
+	width: 50%;
+}
+
+.col-7of12 {
+	width: 58.333%;
+}
+
+.col-8of12 {
+	width: 66.667%;
+}
+
+.col-9of12 {
+	width: 75%;
+}
+
+.col-10of12 {
+	width: 83.333%;
+}
+
+.col-11of12 {
+	width: 91.667%;
+}
+
+.col-12of12 {
+	width: 100%;
+}
+
+
+/*
+	Here using @media queries, we are specifying when the display
+	has a width less than 50em it should collapse the columns 
+	into one stack (hence width: 100%)
+*/
+@media (max-width: 50em) {
+
+	.col-1of12, .col-2of12, .col-3of12, .col-4of12, .col-5of12, .col-6of12,
+	.col-7of12, .col-8of12, .col-9of12, .col-10of12, .col-11of12, .col-12of12 {
+		width: 100%;
+	}
+	
+}
+
+/*
+	Much like last week, we are clearing the floating items so
+	that our 'grid' structure can be stacked on others
+*/
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+

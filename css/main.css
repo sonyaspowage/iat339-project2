@@ -1,0 +1,52 @@
+/* Main.css */
+
+body {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	
+}
+
+a {
+	text-decoration: none;	
+}
+
+.wrapper {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+/* Page structure */
+
+nav {
+	background: grey;
+	margin-bottom: 20px;
+}
+
+	nav ul {
+		list-style: none;
+		padding: 20px;
+		margin: 0;
+	}
+	
+	nav ul li {
+		display: inline-block;
+	}
+
+	nav .account {
+		float: right;
+	}
+
+#upcoming-popups .col-12of12 {
+	padding: 0;
+}
+
+#headline {
+	margin-bottom: 20px;
+}
+
+footer {
+	margin-top: 20px;
+	background: blue;
+}
