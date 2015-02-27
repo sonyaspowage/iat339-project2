@@ -1,7 +1,21 @@
 /* Main.css */
 
-body {
+html {
+	/* 
+		Sets up the CSS to allow full height sections/divs
+		From: http://stackoverflow.com/questions/712689/css-div-stretch-100-page-height	
+	*/
+	height: 100%;
+	position: relative;
+}
 
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	line-height: 1.3em;
+	background: white;
+	
+	height: 100% /* Needed for full height sections/divs */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,41 +26,92 @@ a {
 	text-decoration: none;	
 }
 
-.wrapper {
-	max-width: 90%;
-	margin: 0 auto;
-}
 
 /* Page structure */
 
+#hero {
+	width: 100%;
+	height: 100%;	
+	text-align: center;
+}
+
+.hero-wrapper {
+	/* 
+		Vertical Center Align Helper
+		http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ 
+	*/
+ 	position: relative;
+ 	top: 45%;
+ 	transform: translateY(-45%);	
+}
+
+/* Nav */
 nav {
-	background: grey;
-	margin-bottom: 20px;
+	background: #404040;
+	color: white;
 }
 
 	nav ul {
 		list-style: none;
-		padding: 20px;
 		margin: 0;
+		padding: 20px 20px;
 	}
 	
-	nav ul li {
+	nav li {
 		display: inline-block;
+		padding: 0 20px 0 0;
+	}
+	
+	nav a, nav a:visited {
+		color: white;
+	}
+	
+/* Current/Upcoming Popups */
+
+#current-popups .col-4of12, #upcoming-popups .col-4of12 {
+	position: relative;
+}
+
+#current-popups img, #upcoming-popups img {
+	max-width: 100%;
+    height: auto;
+    
+    /* need to fix this to get rid of white bar below each row... */
+}
+
+#about, #contact {
+	width: 100%;
+	text-align: center;
+	padding: 80px 0;
+}
+#about-us .col-6of12 .about-content{
+	padding: 0 0 20px 0;
+}
+
+
+.popup-content-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+ 	
+ 	height: 100%;
+ 	width: 100%;
+ 	margin: 0 auto;
+ 	
+ 	text-align: center;
+}
+
+	#upcoming-popups .popup-content-wrapper {
+		/* Style the upcoming popups with an overlay */
+		background:  rgba(0,0,0,.5);
 	}
 
-	nav .account {
-		float: right;
-	}
-
-#upcoming-popups .col-12of12 {
-	padding: 0;
+.popup-vertical-align {
+	/* Same as hero-wrapper but modified */
+ 	position: relative;
+ 	top: 40%;
+ 	transform: translateY(-40%);	
 }
 
-#headline {
-	margin-bottom: 20px;
-}
 
-footer {
-	margin-top: 20px;
-	background: blue;
-}
+
