@@ -1,6 +1,12 @@
 body {
-  h1
+  font-family: 'Khula', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background-color: #ebc3b3;
 
+  height: 100% /* Needed for full height sections/divs */
 }
 
 section h1{

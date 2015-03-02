@@ -12,13 +12,27 @@ html {
 body {
   font-family: 'Khula', sans-serif;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   color: #fff;
   background-color: #ebc3b3;
 
   height: 100% /* Needed for full height sections/divs */
 }
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: lowercase;
+	color: #fff;
+	border-bottom: 1.8px solid;
+	margin: 0;
+}
+
+a:hover{
+	opacity: 0.4;
+}
+
 
 h1{
 	display: inline-block;
@@ -31,9 +45,15 @@ h1{
 }
 	
 
-a {
-	text-decoration: none;	
+h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: #fff;
+	text-transform:lowercase;
 }
+
 
 
 /* Page structure */
@@ -58,14 +78,22 @@ a {
 
 /* Nav */
 nav {
-	background: #404040;
+	background: #d8d8d8;
 	color: white;
 }
+
+	nav a{
+		font-size: 0.7em;
+		font-weight: 600;
+		color: #fff;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
 
 	nav ul {
 		list-style: none;
 		margin: 0;
-		padding: 20px 20px;
+		padding: 10px 10px;
 	}
 	
 	nav li {
@@ -112,9 +140,9 @@ nav {
  	text-align: center;
 }
 
-	#upcoming-popups .popup-content-wrapper {
-		/* Style the upcoming popups with an overlay */
-		background:  rgba(0,0,0,.5);
+#upcoming-popups .popup-content-wrapper {
+	/* Style the upcoming popups with an overlay */
+	background:  rgba(255,255,255,0.5);
 	}
 
 .popup-vertical-align {
@@ -124,5 +152,28 @@ nav {
  	transform: translateY(-40%);	
 }
 
+.title{
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.0rem;
+	color: #fff;
+	letter-spacing: 0.08em;
+	line-height:1em;
+	text-transform: lowercase;
+	margin: 0rem;
+}
 
+.dates{
+	font-size: 1em;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.category{
+	margin-top: 0.8em;
+	max-width: 20em;
+}
+
+}
 
