@@ -18,21 +18,10 @@ body {
   color: #fff;
   background-color: #ebc3b3;
 
-  height: 100% /* Needed for full height sections/divs */
+  height: 100% 
+  /* Needed for full height sections/divs */
 }
 
-a{
-	display: inline-block;
-	text-decoration: none;
-	text-transform: lowercase;
-	color: #fff;
-	border-bottom: 1.8px solid;
-	margin: 0;
-}
-
-a:hover{
-	opacity: 0.4;
-}
 
 
 h1{
@@ -55,6 +44,52 @@ h2{
 	text-transform:lowercase;
 }
 
+h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.15em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+h3 a{
+	padding-bottom: 0.3em;
+	text-transform: none;
+}
+
+h4{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5em;
+	font-weight: 400;
+	letter-spacing: 0.09em;
+	line-height: 1em;
+	color: #fff;
+	text-transform:lowercase;
+
+}
+
+h5{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.8em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: #fff;
+}
+
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: lowercase;
+	color: #fff;
+	border-bottom: 1.9px solid;
+	margin: 0;
+}
+
+a:hover{
+	opacity: 0.4;
+}
 
 
 /* Page structure */
@@ -125,7 +160,7 @@ nav {
 	padding: 80px 0;
 }
 #about-us .col-6of12 .about-content{
-	padding: 0 0 20px 0;
+	padding: 50px 20px 90px 30px;
 }
 
 
@@ -153,6 +188,9 @@ nav {
  	transform: translateY(-40%);	
 }
 
+
+/* Homepage Stlying*/
+
 .title{
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
@@ -174,6 +212,7 @@ nav {
 .category{
 	margin-top: 0.8em;
 }
+
 
 }
 
