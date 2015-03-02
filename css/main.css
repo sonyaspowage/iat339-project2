@@ -10,17 +10,26 @@ html {
 }
 
 body {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 300;
-	line-height: 1.3em;
-	background: white;
-	
-	height: 100% /* Needed for full height sections/divs */
+  font-family: 'Khula', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background-color: #ebc3b3;
+
+  height: 100% /* Needed for full height sections/divs */
 }
 
-h1, h2, h3, h4, h5, h6 {
-	
+h1{
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3.3rem;
+	color: #fff;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	margin:0rem;
 }
+	
 
 a {
 	text-decoration: none;	
@@ -28,6 +37,8 @@ a {
 
 
 /* Page structure */
+
+
 
 #hero {
 	width: 100%;

@@ -1,0 +1,182 @@
+body {
+  h1
+
+}
+
+section h1{
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3.3rem;
+	color: #fff;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	margin:0rem;
+
+}
+
+section h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: #fff;
+	text-transform:lowercase;
+}
+
+section h3{
+	font-size: 1em;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+
+}
+
+section h4{
+	font-size: 1em;
+	font-weight: 600;
+	margin-top: 0;
+}
+
+section h5{
+	font-size: 2em;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 3em;
+	margin-bottom: 0.1em;
+
+}
+
+section h6{
+	font-size: 1.0em;
+	font-weight: 600;
+	color: #655e56;
+	text-transform: uppercase;
+	margin-top: 1em;
+	margin-bottom: 0;
+	margin-left:0;
+	margin-right: 0;
+
+}
+
+
+section p{
+	margin: 0;
+	max-width: 500px;
+}
+
+nav a{
+	text-decoration: none;
+	text-transform: lowercase;
+	color: #fff;
+	border-bottom: 2px solid;
+	margin: 0;
+}
+
+nav a:active, a:hover {
+	opacity:0.4;
+}
+
+
+div{
+	display:inline-block;
+	margin: 0em;
+}
+
+.greyColor{
+	padding: 38px 0;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+}
+
+.whiteColor{
+	padding: 38px 0;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+}
+
+
+.pinkColor{
+	padding: 38px 0;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+}
+
+
+.lightpinkColor{
+	padding: 38px 0;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+	border: 0.5px solid #e3a6ad;
+}
+
+
+.blueColor{
+	padding: 38px 0;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+}
+
+
+.yellowColor{
+	padding: 38px 0;
+	text-align: center;
+	width: 200px;
+	height: 60px;
+}
+
+
+
+section img {
+	height: auto; 
+	max-width: 100%;
+}
+
+a.button{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: lowercase;
+	color: #fff;
+	border-bottom: 2px solid;
+	margin: 0;
+}
+
+a.button:hover{
+	opacity: 0.4;
+}
+
+form    {
+	margin:0px;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+input    {
+	width:375px;
+	height: 25px;
+	display:inline-block;
+	border: 1px solid #fff;
+	background-color: #ebc3b3;
+	color: #fff;
+
+}
+
+
+.input-wrapper {
+	margin: 0 0 0em 0; 
+}
+
+
+label {
+	display: block;
+}
+
