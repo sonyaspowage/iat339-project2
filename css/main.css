@@ -1,4 +1,5 @@
 /* Main.css */
+/* parllax effect:http://www.georgeandharrison.nl/; */
 
 html {
 	/* 
@@ -10,26 +11,99 @@ html {
 }
 
 body {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 300;
-	line-height: 1.3em;
-	background: white;
-	
-	height: 100% /* Needed for full height sections/divs */
+  font-family: 'Khula', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background-color: #ebc3b3;
+
+  height: 100% 
+  /* Needed for full height sections/divs */
 }
 
-h1, h2, h3, h4, h5, h6 {
-	
+h1 {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3.3rem;
+	color: #fff;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	margin:0rem;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: #fff;
+	text-transform:lowercase;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.15em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+h3 a {
+	padding-bottom: 0.3em;
+	text-transform: none;
+}
+
+h4{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5em;
+	font-weight: 400;
+	letter-spacing: 0.09em;
+	line-height: 1em;
+	color: #fff;
+	text-transform:lowercase;
+}
+
+h5 { 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.8em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: #fff;
 }
 
 
 a {
 	text-decoration: none;
+	text-transform: lowercase;
+	color: #fff;
+	border-bottom: 1.9px solid;
+	margin: 0;
+}
+
+a:hover {
+	opacity: 0.4;
 }
 
 a.image-cards{
 	color: black;
 }
+
+button, input[type="submit"] {
+	/* reset styles */
+	border: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+	
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.15em;
+	color: #fff;
+	text-transform: uppercase;
+} 
 
 
 /* Page structure */
@@ -44,13 +118,7 @@ a.image-cards{
 	color: black;
 }
 
-button{
-	width: 6em;
-}
 
-input[type="submit"]{
-	width: 6em;
-}
 .hero-wrapper {
 	/* 
 		Vertical Center Align Helper
@@ -63,14 +131,14 @@ input[type="submit"]{
 
 /* Nav */
 nav {
-	background: #404040;
+	background: #d8d8d8;
 	color: white;
 }
 
 	nav ul {
 		list-style: none;
 		margin: 0px;
-		padding: 20px 20px;
+		padding: 10px;
 	}
 	
 	nav li {
@@ -78,11 +146,13 @@ nav {
 		padding: 0 20px 0 0;
 	}
 	
-	
 	nav a, nav a:visited {
-		color: white;
-	}
-	
+		font-size: 0.7em;
+		font-weight: 600;
+		color: #fff;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}	
 	
 /* Current/Upcoming Popups */
 
@@ -103,6 +173,10 @@ nav {
 	text-align: center;
 	padding: 80px 0;
 
+}
+
+#about-us .col-6of12 .about-content {
+	padding: 50px 20px 90px 30px;
 }
 
 .spaced-div{
@@ -128,7 +202,7 @@ button.button-block {
 
 	#upcoming-popups .popup-content-wrapper {
 		/* Style the upcoming popups with an overlay */
-		background:  rgba(0,0,0,.5);
+		background:rgba(255,255,255,0.5);
 	}
 
 .popup-vertical-align {
@@ -138,6 +212,29 @@ button.button-block {
  	transform: translateY(-40%);	
 }
 
+/* Homepage Stlying*/
+
+.title {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.0rem;
+	color: #fff;
+	letter-spacing: 0.08em;
+	line-height:1em;
+	text-transform: lowercase;
+	margin: 0rem;
+}
+
+.dates {
+	font-size: 1em;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.category {
+	margin-top: 0.8em;
+}
 
 
 
