@@ -163,7 +163,7 @@ nav {
 #current-popups img, #upcoming-popups img {
 	max-width: 100%;
     height: auto;
-    
+
     /* need to fix this to get rid of white bar below each row... */
 }
 
@@ -195,7 +195,7 @@ button.button-block {
  	
  	height: 100%;
  	width: 100%;
- 	margin: 0 auto;
+ 	margin: 0;
  	
  	text-align: center;
 }
