@@ -189,8 +189,8 @@ div.col-4of12 :hover{
 }
 
 .popup-content-wrapper{
-	position: absolute;
 	display: none;
+	position: absolute;
 	top: 0px;
 	left: 0;
 
@@ -201,11 +201,13 @@ div.col-4of12 :hover{
 	text-align: center;
 }
 
+
 /* Homepage hover content */
 .col-4of12:hover .popup-content-wrapper{
 	display:block;
-
 }
+
+
 
 #upcoming-popups .popup-content-wrapper {
 	/* Style the upcoming popups with an overlay */
