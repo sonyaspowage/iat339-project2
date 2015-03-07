@@ -93,6 +93,7 @@ a:hover{
 }
 
 
+
 button, input[type="submit"] {
 	/* reset styles */
 	border: none;
@@ -107,6 +108,11 @@ button, input[type="submit"] {
 	color: #fff;
 	text-transform: uppercase;
 } 
+
+/* hover changes bkg color
+div.col-4of12 :hover{
+	background-color: #000;
+}*/
 
 
 
@@ -184,6 +190,7 @@ button, input[type="submit"] {
 
 .popup-content-wrapper{
 	position: absolute;
+	display: none;
 	top: 0px;
 	left: 0;
 
@@ -192,6 +199,12 @@ button, input[type="submit"] {
 	margin-bottom: 0px;
 
 	text-align: center;
+}
+
+/* Homepage hover content */
+.col-4of12:hover .popup-content-wrapper{
+	display:block;
+
 }
 
 #upcoming-popups .popup-content-wrapper {
