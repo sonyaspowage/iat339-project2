@@ -1,6 +1,3 @@
-/* Main.css */
-/* parllax effect:http://www.georgeandharrison.nl/; */
-
 html {
 	/* 
 		Sets up the CSS to allow full height sections/divs
@@ -10,19 +7,21 @@ html {
 	position: relative;
 }
 
-body {
-  font-family: 'Khula', sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  color: #fff;
-  background-color: #ebc3b3;
-
-  height: 100% 
-  /* Needed for full height sections/divs */
+body{
+	font-family: 'Khula', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	color: #fff;
+	background-color: #ebc3b3;
+	/* Need for full height sections + divs */
+	height: 100%; 
+	/*overflow: auto;*/
+	margin: 0;
 }
 
-h1 {
+
+h1{
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 3.3rem;
@@ -32,7 +31,8 @@ h1 {
 	margin:0rem;
 }
 
-h2 {
+
+h2{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2em;
 	font-weight: 400;
@@ -41,13 +41,15 @@ h2 {
 	text-transform:lowercase;
 }
 
-h3 {
+
+h3{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.0em;
 	font-weight: 400;
 	letter-spacing: 0.15em;
 	color: #fff;
 	text-transform: uppercase;
+
 }
 
 h3 a {
@@ -73,22 +75,23 @@ h5 {
 	color: #fff;
 }
 
-
-a {
+a{
 	text-decoration: none;
 	text-transform: lowercase;
 	color: #fff;
 	border-bottom: 1.9px solid;
 	margin: 0;
+	-o-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-webkit-transition: 0.4s;	
+
 }
 
-a:hover {
+a:hover{
 	opacity: 0.4;
 }
 
-a.image-cards{
-	color: black;
-}
 
 button, input[type="submit"] {
 	/* reset styles */
@@ -106,68 +109,104 @@ button, input[type="submit"] {
 } 
 
 
-/* Page structure */
 
-#hero {
+/* Hero page */
+#hero{
 	width: 100%;
-	height: 100%;	
+	height: 100%;
 	text-align: center;
 }
 
-#hero a{
-	color: black;
-}
-
-
-.hero-wrapper {
+.hero-wrapper{
 	/* 
 		Vertical Center Align Helper
 		http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ 
 	*/
- 	position: relative;
- 	top: 45%;
- 	transform: translateY(-45%);	
+	position: relative;
+	top: 45%;
+	transform: translateY(-45%);	
 }
 
-/* Nav */
-nav {
-	background: #d8d8d8;
+
+/* Navagation */
+.nav {
+	/*position: fixed;
+	z-index: 999;
+	width: 97%;*/
+	background-color: #d8d8d8;
 	color: white;
+	padding: 4px 0 4px 0;
 }
 
-	nav ul {
-		list-style: none;
-		margin: 0px;
-		padding: 10px;
-	}
+.nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 10px;
+}
 	
-	nav li {
-		display: inline-block;
-		padding: 0 20px 0 0;
-	}
+.nav li {
+	display: inline-block;
+	padding: 0 20px 0 0;
+}
 	
-	nav a, nav a:visited {
-		font-size: 0.7em;
-		font-weight: 600;
-		color: #fff;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-	}	
-	
-/* Current/Upcoming Popups */
+.nav a, .nav a:visited {
+	font-size: 1em;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: lowercase;
+	border-bottom: 2px solid;
+}	
 
+
+
+/* Grid */
+.col4of12{
+	position: relative;
+}
+
+
+/* Current + Upcoming popups on home page */
 #current-popups .col-4of12, #upcoming-popups .col-4of12 {
 	position: relative;
 }
 
-#current-popups img, #upcoming-popups img {
+#current-popups img, #upcoming-popups img{
+	display: block;
 	max-width: 100%;
-    height: auto;
+	height: auto;
+	margin-bottom: 0px;
+}
 
-    /* need to fix this to get rid of white bar below each row... */
+#current-popups .grid a{
+	display: block;
+}
+
+.popup-content-wrapper{
+	position: absolute;
+	top: 0px;
+	left: 0;
+
+	height: 100%;
+	width: 100%;
+	margin-bottom: 0px;
+
+	text-align: center;
+}
+
+#upcoming-popups .popup-content-wrapper {
+	/* Style the upcoming popups with an overlay */
+	background:rgba(255,255,255,0.5);
+	}
+
+.popup-vertical-align{
+	position: relative;
+	top: 40%;
+	transform: translateY(-40%);
 }
 
 
+/* About and Contact */
 #about, #contact {
 	width: 100%;
 	text-align: center;
@@ -188,33 +227,15 @@ button.button-block {
 }
 
 
-.popup-content-wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
- 	
- 	height: 100%;
- 	width: 100%;
- 	margin: 0;
- 	
- 	text-align: center;
+/* Homepage Grid Information Styling */
+.dates{
+	font-size: 1em;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
 }
 
-	#upcoming-popups .popup-content-wrapper {
-		/* Style the upcoming popups with an overlay */
-		background:rgba(255,255,255,0.5);
-	}
-
-.popup-vertical-align {
-	/* Same as hero-wrapper but modified */
- 	position: relative;
- 	top: 40%;
- 	transform: translateY(-40%);	
-}
-
-/* Homepage Stlying*/
-
-.title {
+.title{
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2.0rem;
@@ -222,19 +243,11 @@ button.button-block {
 	letter-spacing: 0.08em;
 	line-height:1em;
 	text-transform: lowercase;
-	margin: 0rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
 }
 
-.dates {
-	font-size: 1em;
-	font-weight: 400;
-	color: #fff;
-	text-transform: uppercase;
-}
-
-.category {
+.category{
 	margin-top: 0.8em;
 }
-
-
-
