@@ -1,20 +1,58 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf140
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AndaleMono;}
-{\colortbl;\red255\green255\blue255;\red31\green31\blue32;\red255\green255\blue255;}
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
 
-\f0\fs24 \cf0 Oak and Fort Industrial Warehouse Sale\
+\f0\fs24 \cf0 HTML\
+\
+	<div class="col-4of12">\
+				<img src="img/Chinatown/bucketswag.jpg" alt="Chinatown Mall bucket hat thumbnail">\
+		<!--<a href="heyjude.html" class="image-cards">-->\
+					<div class="popup-content-wrapper">\
+						<div class="popup-vertical-align">\
+							<div class="dates">Mar 14</div>\
+							<div class="title">Chinatown Mall: Street Wear</div>\
+							<div class="category">Lorem Ipsum doler sit amet.</div>\
+						</div>\
+					</div>\
+			</div>\
 \
 \
-\pard\pardeftab720\sl416\sa260
-
-\f1\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Wednesday to Thursday: 10AM - 9PM\'a0\
-\pard\tx6019\pardeftab720\sl416\sa260
-\cf2 Friday to Saturday: 8AM \'96 9PM\
-\pard\pardeftab720\sl416\sa260
-\cf2 Sunday: 8AM \'96 6PM\
+\
+CSS\
+/* Grid */\
+.col4of12\{\
+	position: relative;\
+\}\
 \
 \
-{\field{\*\fldinst{HYPERLINK "http://www.thisopenspace.ca/upcoming/2015/2/7/oakandfortpopup"}}{\fldrslt http://www.thisopenspace.ca/upcoming/2015/2/7/oakandfortpopup}}}
+/* Current + Upcoming popups on home page */\
+#current-popups .col-4of12, #upcoming-popups .col-4of12 \{\
+	position: relative;\
+\}\
+\
+#current-popups img, #upcoming-popups img\{\
+	display: block;\
+	max-width: 100%;\
+	margin-bottom: 0px;\
+\}\
+\
+#current-popups .grid a\{\
+	display: block;\
+\}\
+\
+.popup-content-wrapper\{\
+	display: none;\
+	position: absolute;\
+	top: 0px;\
+	left: 0;\
+\
+	height: 100%;\
+	width: 100%;\
+	margin-bottom: 0px;\
+\
+	text-align: center;\
+\}\
+\
+}
