@@ -127,11 +127,14 @@ div.col-4of12 :hover{
 #hero img{
 	position: relative;
 	display: inline-block;
+
 }
 
-#hero h1 p a{
-	position: relative;
+#hero a{
+	border-bottom: 3px solid;
 }
+
+
 .hero-wrapper{
 	/* 
 		Vertical Center Align Helper
@@ -213,7 +216,6 @@ div.col-4of12 :hover{
 /* Homepage hover content */
 .col-4of12:hover .popup-content-wrapper{
 	display: block;
-	opacity: 100%;
 }
 
 
@@ -235,6 +237,15 @@ div.col-4of12 :hover{
 	text-align: center;
 	padding: 80px 0;
 
+}
+
+.about-content{
+	max-width: 100px;
+}
+
+.col-6of12 img{
+	width: 100%;
+	height: 100%;
 }
 
 #about-us .col-6of12 .about-content {
@@ -275,27 +286,35 @@ button.button-block {
 	margin-top: 0.8em;
 }
 
-/* Popup detailed page */
 
-.col-3of12{
-	position: relative;
-}
 
-.col-3of12 p{
-	padding: 50px 20px 90px 30px;
-	top: 0px;
-	left: 0;
 
-	height: 100%;
+/* About Us */
+
+#aboutus{
+	background-image: url("img/shoe.jpg");
 	width: 100%;
-	margin-bottom: 0px;
-
+	height: 100%;
 	text-align: center;
 }
 
-#popup-details img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 0px;
+#aboutus img{
+	position: relative;
+	display: inline-block;
+
+}
+
+#aboutus h1 p a{
+	width: 205px;
+
+}
+
+.about-us-wrapper{
+	/* 
+		Vertical Center Align Helper
+		http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ 
+	*/
+	position: relative;
+	top: 45%;
+	transform: translateY(-45%);	
 }
