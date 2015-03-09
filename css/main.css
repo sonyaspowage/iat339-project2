@@ -235,8 +235,8 @@ div.col-4of12 :hover{
 .col-4of12:hover .popup-content-wrapper{
 	display: block;
 	background:rgba(0,0,0,0.5);
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.9s;
+	transition: background-color 0.9s;
 }
 
 
@@ -341,3 +341,5 @@ button.button-block {
 	top: 45%;
 	transform: translateY(-45%);	
 }
+
+
