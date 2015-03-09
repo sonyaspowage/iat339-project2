@@ -30,6 +30,7 @@
 	<!-- Current Popups-->
 	<!-- Row 1-->
 		<!--Hey Jude-->		
+		<div id="popup-grid">
 		<section id="current-popups" class="grid">
 			<div class="col-4of12">
 				<img src="img/hey-jude/spring1.jpg" alt="Hey Jude Spring Thumbnail">
@@ -110,10 +111,25 @@
 						</div>
 					</div>
 			</div>
-		</section>	
+		</section>
+		</div>	
 
 		<p> view upcoming </p>
 		
+				<!-- jQuery and Packery for grid sorting -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!-- old, don't think we need this. switched to packery <script src="js/masonry.min.js"></script> -->
+		<script src="js/packery.min.js"></script>
+		
+		<script>
+			// use this container for sorting elements	
+			var $container = $('#popup-grid');
+			// initialize, run packery
+			$container.packery({
+				// look for elements to sort with this selector
+				itemSelector: '.col-4of12'
+			});
+		</script>
 	
 </body>
 </html>
