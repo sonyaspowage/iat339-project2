@@ -122,11 +122,15 @@ div.col-4of12 :hover{
 	width: 100%;
 	height: 100%;
 	text-align: center;
+	background-size: contain;
 }
 
-#hero img{
-	position: relative;
+#hero .logo{
 	display: inline-block;
+	max-width: 100%;
+	position: relative;
+	background-position: 50% 50%;
+	clear: both;
 
 }
 
@@ -288,7 +292,6 @@ button.button-block {
 
 
 
-
 /* About Us */
 
 #aboutus{
@@ -296,6 +299,7 @@ button.button-block {
 	width: 100%;
 	height: 100%;
 	text-align: center;
+	background-size: contain;
 }
 
 #aboutus img{
@@ -304,8 +308,9 @@ button.button-block {
 
 }
 
-#aboutus h1 p a{
-	width: 205px;
+.about-us-wrapper{
+	display: inline-block;
+	width: 450px;
 
 }
 
