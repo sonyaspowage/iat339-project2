@@ -118,20 +118,28 @@ div.col-4of12 :hover{
 
 /* Hero page */
 #hero{
-	background-image: url("img/iloveugly3.jpg");
+	background-image: url("img/landingtest.jpg");
 	width: 100%;
 	height: 100%;
 	text-align: center;
 	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 
-#hero .logo{
-	display: inline-block;
-	max-width: 100%;
-	position: relative;
-	background-position: 50% 50%;
-	clear: both;
 
+.logo{
+	background-image: url("img/Logo.png");
+	position: relative;
+	display: inline-block;
+	width: 500px;
+	height: 136px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 
 #hero a{
@@ -147,6 +155,7 @@ div.col-4of12 :hover{
 	position: relative;
 	top: 45%;
 	transform: translateY(-45%);	
+
 }
 
 
@@ -178,6 +187,7 @@ div.col-4of12 :hover{
 	letter-spacing: 2px;
 	text-transform: lowercase;
 	border-bottom: 2px solid;
+
 }	
 
 
@@ -216,17 +226,25 @@ div.col-4of12 :hover{
 	text-align: center;
 }
 
+.grid a:hover {
+	opacity: 0.9;
+
+}
 
 /* Homepage hover content */
 .col-4of12:hover .popup-content-wrapper{
 	display: block;
+	background:rgba(0,0,0,0.5);
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
 }
 
 
-#upcoming-popups .popup-content-wrapper {
-	/* Style the upcoming popups with an overlay */
-	background:rgba(255,255,255,0.5);
+/*#upcoming-popups .popup-content-wrapper {
+	/* Style the upcoming popups with an overlay 
+	background:rgba(255,255,255,0.8);
 	}
+*/
 
 .popup-vertical-align{
 	position: relative;
