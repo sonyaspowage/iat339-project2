@@ -18,6 +18,7 @@ body{
 	height: 100%; 
 	/*overflow: auto;*/
 	margin: 0;
+	line-height: 0.8em;
 }
 
 
@@ -29,6 +30,7 @@ h1{
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	margin:0rem;
+	line-height: 0.9em;
 }
 
 
@@ -39,6 +41,7 @@ h2{
 	letter-spacing: 0.1em;
 	color: #fff;
 	text-transform:lowercase;
+	line-height: 1.5em;
 }
 
 
@@ -49,6 +52,7 @@ h3{
 	letter-spacing: 0.15em;
 	color: #fff;
 	text-transform: uppercase;
+	line-height: 1.2em;
 
 }
 
@@ -118,7 +122,7 @@ div.col-4of12 :hover{
 
 /* Hero page */
 #hero{
-	background-image: url("img/landingtest.jpg");
+	background-image: url("img/iloveugly2.jpg");
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -131,7 +135,7 @@ div.col-4of12 :hover{
 
 
 .logo{
-	background-image: url("img/Logo.png");
+	background-image: url("img/logo.png");
 	position: relative;
 	display: inline-block;
 	width: 500px;
@@ -235,8 +239,9 @@ div.col-4of12 :hover{
 .col-4of12:hover .popup-content-wrapper{
 	display: block;
 	background:rgba(0,0,0,0.5);
-	-webkit-transition: background-color 0.9s;
-	transition: background-color 0.9s;
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
 }
 
 
@@ -309,11 +314,21 @@ button.button-block {
 }
 
 
+/* Individual Popup Pages */
+.copy{
+	position: relative;
+	padding: 100px 100px 100px 100px;
+	top: 10%;
+	transform: translateY(-10%);
+
+}
+
+
 
 /* About Us */
 
 #aboutus{
-	background-image: url("img/shoe.jpg");
+	background-image: url("img/aboutpink.jpg");
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -346,4 +361,15 @@ button.button-block {
 	transform: translateY(-45%);	
 }
 
+/* trying to make a hover fade 
+.fade {
+   opacity: 1;
+	   transition: opacity .25s ease-in-out;
+	   -moz-transition: opacity .25s ease-in-out;
+	   -webkit-transition: opacity .25s ease-in-out;
+	   }
 
+.fade:hover {
+    opacity: 0.5;
+ }
+*/
