@@ -318,6 +318,10 @@ button.button-block {
 	height: 100%;
 	text-align: center;
 	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 
 #aboutus img{
