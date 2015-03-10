@@ -1,0 +1,147 @@
+
+/* 
+	For more on flexbox, I highly recommend "A Guide to Flexbox":
+	http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+	PLEASE NOTE:
+	A lot of the properties covered below work ONLY when you set
+	display to flexbox. Make sure to understand when and where
+	you can apply these properties by looking them up as necessary.
+*/
+
+
+/*
+	With this selector, we are specifying that all objects use
+	the border-box model (not the content-box model)
+*/
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*
+	Here we are going to establish some rules for our 'box'
+	which contains all the elements to be wrapped
+*/
+.box {
+	/* Sets us into 'flexbox' mode */
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex; 
+
+	/* 
+		The 'flex-wrap' property lets us automagically wrap 
+		child elements that are too-wide for their current row
+	 */
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
+
+	/* 
+		'align-items' lets us control the vertical positioning
+		of elements within a flexbox.
+	*/
+	-webkit-align-items: stretch;
+	-ms-align-items: stretch;
+	align-items: stretch;
+
+}
+
+
+.box-item-nav {
+	/*
+		Child elements of a flexbox can have 'flex-grow' applied
+		to them, which assigns a 'weight' to the element in their
+		current row. The higher the 'weight', the more width
+		of the row that element will take up.
+	*/
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+}
+
+
+
+.box-item-article {
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+
+	/*
+		'flex-basis' is the initial size of the flex item (sort of 
+		a minimum dimension) before any flexbox is applied
+	*/
+	-webkit-flex-basis: 25em;
+	-ms-flex-basis: 25em;
+	flex-basis: 25em;
+}
+
+
+.box-item-article-image {
+	/*
+		Child elements of a flexbox can have 'flex-grow' applied
+		to them, which assigns a 'weight' to the element in their
+		current row. The higher the 'weight', the more width
+		of the row that element will take up.
+	*/
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	
+	/*
+		Because our image is rendered in pixels, it is acceptable
+		to use pixels to set the base in this case.
+	*/
+	-webkit-flex-basis: 200px;
+	-ms-flex-basis: 200px;
+	flex-basis: 200px;
+}
+
+
+.box-item-article-image img {
+	width: 100%;
+	max-width: auto;
+}
+
+
+@media (max-width: 30em) {
+	/*
+		Just as before, we can use media queries to apply different
+		styles at specific sizes 
+	*/
+	.box-item-article-image {
+		/*
+			The flexbox 'order' attribute lets us re-order items
+			as they are flowed. Smaller values position items closer
+			to the top, or to the left, higher values place them near
+			the end, or to the right.
+		*/
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+	}
+}
+
+
+.box-item-article-text {
+	margin-left: 1em;
+
+	-webkit-flex-grow: 2;
+	-ms-flex-grow: 2;
+	flex-grow: 2;
+
+	/*
+		'flex-shrink' tells the flexbox that it is ok to shrink this
+		item when the screen is too small to accomodate it at the
+		specified 'grow' size
+	*/
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+
+	-webkit-flex-basis: 20em;
+	-ms-flex-basis: 20em;
+	flex-basis: 20em;
+}
