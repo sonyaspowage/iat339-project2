@@ -10,7 +10,7 @@ html {
 body{
 	font-family: 'Khula', sans-serif;
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 13px;
 	letter-spacing: 0.1em;
 	color: #fff;
 	background-color: #ebc3b3;
@@ -18,7 +18,7 @@ body{
 	height: 100%; 
 	/*overflow: auto;*/
 	margin: 0;
-	line-height: 0.8em;
+	line-height: 1em;
 }
 
 
@@ -41,7 +41,7 @@ h2{
 	letter-spacing: 0.1em;
 	color: #fff;
 	text-transform:lowercase;
-	line-height: 1.5em;
+	line-height: 0.9em;
 }
 
 
@@ -161,6 +161,7 @@ div.col-4of12 :hover{
 	transform: translateY(-45%);	
 
 }
+
 
 
 /* Navagation */
@@ -318,11 +319,9 @@ button.button-block {
 .copy{
 	position: relative;
 	padding: 100px 100px 100px 100px;
-	top: 10%;
+	top: 5%;
 	transform: translateY(-10%);
-
 }
-
 
 
 /* About Us */
@@ -360,6 +359,77 @@ button.button-block {
 	top: 45%;
 	transform: translateY(-45%);	
 }
+
+
+.content {
+	min-height: 20px;	
+	max-width: 50em;
+	margin: 2px;
+}
+
+
+div.content1{
+	max-width: 400em;
+	height: 14em;
+	margin: 7em 5em 0em 5em;
+
+}
+
+div.content1 img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+div.chinatownHeader {
+	background-image: url("img/iloveugly.jpg");
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+
+div.fantasticmrfoxHeader {
+	background-image: url("img/feast.jpg");
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+
+div.heyjudeHeader {
+	background-image: url("img/summer3.jpg");
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+
+
+
+
+
+/*div.image3{
+	background-image: url("img/legging.jpg");
+	width: 400px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}*/
 
 /* trying to make a hover fade 
 .fade {
