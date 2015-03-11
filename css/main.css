@@ -418,8 +418,66 @@ div.heyjudeHeader {
 	-o-background-size: cover;
 }
 
+div.juno33Header{
+	background-image: url("img/chefjunofood2.jpg");
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;	
+}
+
+div.indieswapHeader{
+	background-image: url("img/summer3.jpg");
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;	
+}
 
 
+div.kinfolkHeader{
+	background-image: url("img/dinnertop.jpg");
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;	
+}
+
+div.warholHeader{
+	background-image: url("img/marilyn_pink.jpg");
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;	
+}
+
+div.tattooHeader{
+	background-image: url("img/tattoo3.jpg");
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;	
+}
 
 
 
