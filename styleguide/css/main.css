@@ -84,6 +84,10 @@ nav a{
 
 nav a:active, a:hover {
 	opacity:0.4;
+	-o-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-webkit-transition: 0.4s;
 }
 
 
@@ -146,43 +150,68 @@ section img {
 	max-width: 100%;
 }
 
-a.button{
+.button{
+	position: relative;
 	display: inline-block;
-	text-decoration: none;
-	text-transform: lowercase;
+	border: 2px solid #fff;
+	padding: 10px 20px;
+	height: 20px;
+	outline: 0 !important;
+	font-size: 0.8em;
+	font-color: #000;
+	text-transform: uppercase;
 	color: #fff;
-	border-bottom: 2px solid;
-	margin: 0;
+
 }
 
-a.button:hover{
+
+.button:hover{
 	opacity: 0.4;
+	-o-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-webkit-transition: 0.4s;
 }
+
 
 form    {
 	margin:0px;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 input    {
 	width:375px;
-	height: 25px;
+	height: 29px;
 	display:inline-block;
 	border: 1px solid #fff;
 	background-color: #ebc3b3;
 	color: #fff;
+	margin: 1em;
 
 }
 
 
 .input-wrapper {
-	margin: 0 0 0em 0; 
+	margin: 0.5em 0 0em 0; 
 }
 
 
-label {
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+#checkout{
 	display: block;
+	margin: 20px 0;
+	min-height: 200px;
+	padding: 20px;
+	color: rgba(0,0,0,0.8);
+	font-size: 1em;
+	line-height: 2;
+	opacity: 1;
+	outline: none;
+	resize: none;
+	width: 460px;
 }
-
