@@ -40,8 +40,10 @@
 }
 
 .col-4of12 {
-	width: 33.333%;	
+	width: 33.333%;
 }
+
+
 
 .col-5of12 {
 	width: 41.667%;	
@@ -56,7 +58,7 @@
 }
 
 .col-8of12 {
-	width: 66.667%;
+  width: 66.667%;
 }
 
 .col-9of12 {
@@ -80,8 +82,8 @@
 	Here using @media queries, we are specifying when the display
 	has a width less than 50em it should collapse the columns 
 	into one stack (hence width: 100%)
-*/
-@media (max-width: 50em) {
+
+@media (max-width: 30em) {
 
 	.col-1of12, .col-2of12, .col-3of12, .col-4of12, .col-5of12, .col-6of12,
 	.col-7of12, .col-8of12, .col-9of12, .col-10of12, .col-11of12, .col-12of12 {
@@ -89,6 +91,7 @@
 	}
 	
 }
+*/
 
 /*
 	Much like last week, we are clearing the floating items so

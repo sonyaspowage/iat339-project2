@@ -53,6 +53,7 @@ h3{
 	color: #fff;
 	text-transform: uppercase;
 	line-height: 1.2em;
+	
 
 }
 
@@ -60,6 +61,7 @@ h3 a {
 	padding-bottom: 0.3em;
 	text-transform: none;
 }
+
 
 h4{
 	font-family: 'Montserrat', sans-serif;
@@ -116,6 +118,7 @@ button, input[type="submit"] {
 	text-transform: uppercase;
 } 
 
+
 /* hover changes bkg color
 div.col-4of12 :hover{
 	background-color: #000;
@@ -165,92 +168,60 @@ div.col-4of12 :hover{
 
 }
 
-.fade-in {
-    opacity:0;
-    -webkit-animation:fadeIn ease-in 1; 
-    -moz-animation:fadeIn ease-in 1;
-    animation:fadeIn ease-in 1;
- 
-    -webkit-animation-fill-mode:forwards;  
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
- 
-    -webkit-animation-duration:0.3s;
-    -moz-animation-duration:0.3s;
-    animation-duration:0.3s;
-    
-
-    -webkit-animation-delay: 0.5s;
-	-moz-animation-delay: 0.5s;
-	animation-delay: 0.5s;
-
-}
-
-
-a.splash-arrow {
-	color: white;
-	font-size: 1.2em;
+a.splash-arrow {	
 	position: absolute;
-	bottom: 55px;
+	bottom: 40px;
 	left: 50%;
 	margin-left: -25px;
 	padding: 10px;
 	width: 50px;
 	height: 50px;
 	font-weight: bold;
-	-webkit-transition: all 0.1s ease;
-	-moz-transition: all 0.1s ease;
-	-o-transition: all 0.1s ease;
-	transition: all 0.1s ease;
-	-webkit-animation-delay: 1.5s;
-	-moz-animation-delay: 1.5s;
-	animation-delay: 1.5s;
-	border: 3px solid white;
+	
+	border: 2px solid white;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
 
-a.splash-arrow:hover {
-	text-decoration: none;
-	bottom: 50px;
-}
+	a.splash-arrow:hover {
+		text-decoration: none;
+	}
+	
+	.splash-arrow img {
+		margin-top: 25%;
+	}
 
 
 
 
 /* Navagation */
 .nav {
-	/*position: fixed;
-	z-index: 999;
-	width: 97%;*/
+	width: 100%;
 	background-color: #d8d8d8;
 	color: white;
 	padding: 4px 0 4px 0;
 }
 
-.nav ul {
-	list-style: none;
-	margin: 0px;
-	padding: 10px;
-}
-	
-.nav li {
-	display: inline-block;
-	padding: 0 20px 0 0;
-}
-	
-.nav a, .nav a:visited {
-	font-size: 1em;
-	font-weight: 600;
-	color: #fff;
-	letter-spacing: 2px;
-	text-transform: lowercase;
-	border-bottom: 2px solid;
-
-}	
-
-
+	.nav ul {
+		list-style: none;
+		margin: 0px;
+		padding: 10px;
+	}
+		
+	.nav li {
+		display: inline-block;
+		padding: 0 20px 0 0;
+	}
+		
+	.nav a, .nav a:visited {
+		font-size: 1em;
+		font-weight: 600;
+		color: #fff;
+		letter-spacing: 2px;
+		text-transform: lowercase;
+		border-bottom: 2px solid;
+	}	
 
 /* Grid */
 .col4of12{
@@ -329,6 +300,9 @@ a.splash-arrow:hover {
 .col-6of12 img{
 	width: 100%;
 	height: 100%;
+}
+.col-8of12{
+	 padding: 1em;
 }
 
 #about-us .col-6of12 .about-content {
@@ -585,7 +559,42 @@ input    {
 	width: 460px;
 }
 
+#saved-popups div.col-6of12{
+	padding: 1em;
+}
 
+#saved-popups h3{
+	padding: 0;
+	margin: 0;
+}
+
+#saved-popups button.button-block{
+	margin: 0 0 1em 0;
+	text-align: center;
+	width: 150px;
+	
+}
+
+#events div.col-6of12{
+	padding: 1em;
+}
+
+#events h3{
+	padding: 0;
+	margin: 0;
+}
+
+#events div.spaced-div input{
+
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border: 2px solid #fff;
+  background-color: #ebc3b3;
+  padding: 0 0 0 8px;
+  font-size: 14px;
+  margin: 8px 0 15px 0;
+}
 
 /*div.image3{
 	background-image: url("img/legging.jpg");
