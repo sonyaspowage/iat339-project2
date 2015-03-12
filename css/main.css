@@ -564,7 +564,7 @@ input, #events div.col-6of12 input {
 	border: 1px solid #fff;
 	background-color: #ebc3b3;
 	color: #fff;
-	margin: 1em;
+	margin: 10px 0;
 
 }
 
@@ -591,7 +591,7 @@ textarea:focus, input:focus{
 
 #checkout{
 	display: block;
-	margin: 20px 0;
+	margin: 0;
 	min-height: 200px;
 	padding: 20px;
 	color: rgba(0,0,0,0.8);
@@ -602,6 +602,7 @@ textarea:focus, input:focus{
 	resize: none;
 	width: 460px;
 }
+
 
 #saved-popups div.col-6of12{
 	padding: 1em;
@@ -628,6 +629,12 @@ textarea:focus, input:focus{
 	margin: 0;
 }
 
+.button-block a{
+	text-transform: uppercase;
+	text-decoration: none;
+	
+}
+
 #events div.spaced-div input{
 
   width: 35px;
@@ -650,6 +657,21 @@ button, input[type=submit]{
 	font-size: 0.8em;
 	font-color: #000;
 	text-transform: uppercase;
+
+}
+
+#checkout button {
+	
+	position: relative;
+	display: block;
+	border: 2px solid #fff;
+	padding: 10px 20px;
+	height: 40px;
+	outline: 0 !important;
+	font-size: 0.8em;
+	font-color: #000;
+	text-transform: uppercase;
+	margin-top: 20px;
 
 }
 
