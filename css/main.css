@@ -554,9 +554,23 @@ form    {
 	text-decoration: none;
 }
 
-input    {
+
+
+
+input, #events div.col-6of12 input {
 	width:375px;
 	height: 29px;
+	display:inline-block;
+	border: 1px solid #fff;
+	background-color: #ebc3b3;
+	color: #fff;
+	margin: 1em;
+
+}
+
+#events div.spaced-div input {
+	width:35px;
+	height: 35px;
 	display:inline-block;
 	border: 1px solid #fff;
 	background-color: #ebc3b3;
@@ -616,7 +630,6 @@ textarea:focus, input:focus{
 
 #events div.spaced-div input{
 
-<<<<<<< HEAD
   width: 35px;
   height: 35px;
   display: inline-block;
@@ -626,7 +639,7 @@ textarea:focus, input:focus{
   font-size: 14px;
   margin: 8px 0 15px 0;
 }
-=======
+
 button, input[type=submit]{
 	position: relative;
 	display: block;
@@ -648,7 +661,6 @@ button:hover{
 	-webkit-transition: 0.4s;
 }
 
->>>>>>> origin/master
 
 /*div.image3{
 	background-image: url("img/legging.jpg");
