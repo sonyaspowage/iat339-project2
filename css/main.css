@@ -102,10 +102,11 @@ a:hover{
 
 button, input[type="submit"] {
 	/* reset styles */
-	border: none;
+	border-color: white;
+	border-style: solid;
 	background: none;
 	margin: 0;
-	padding: 0;
+	padding: 5px;
 	
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.0em;
@@ -163,6 +164,58 @@ div.col-4of12 :hover{
 	transform: translateY(-45%);	
 
 }
+
+.fade-in {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1; 
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:0.3s;
+    -moz-animation-duration:0.3s;
+    animation-duration:0.3s;
+    
+
+    -webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+
+}
+
+
+a.splash-arrow {
+	color: white;
+	font-size: 1.2em;
+	position: absolute;
+	bottom: 55px;
+	left: 50%;
+	margin-left: -25px;
+	padding: 10px;
+	width: 50px;
+	height: 50px;
+	font-weight: bold;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	border: 3px solid white;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+a.splash-arrow:hover {
+	text-decoration: none;
+	bottom: 50px;
+}
+
 
 
 
@@ -373,7 +426,8 @@ button.button-block {
 div.content1{
 	max-width: 400em;
 	height: 14em;
-	margin: 7em 5em 0em 5em;
+	margin: 3em 5em 0em 5em;
+
 
 
 }
@@ -384,7 +438,7 @@ div.content1 img{
 }
 
 div.oakandfortHeader{
-	background-image: url("img/eattingfish.jpg");
+	background-image: url(../img/Oak-and-Fort/interior.jpg);
 	width: 100%;
 	height: 60%;
 	text-align: center;
@@ -445,8 +499,8 @@ div.juno33Header{
 	-o-background-size: cover;	
 }
 
-div.indieswapHeader{
-	background-image: url("img/sheets.jpg");
+div.indieHeader{
+	background-image:url(../img/IndieSwap/mintandchopsticks.jpg);
 	width: 100%;
 	height: 60%;
 	text-align: center;
