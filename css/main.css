@@ -377,11 +377,11 @@ div.content1{
 
 
 }
-	
-	div.content1 img{
-		max-width: 100%;
-		max-height: 100%;
-	}
+
+div.content1 img{
+	max-width: 100%;
+	max-height: 100%;
+}
 
 div.oakandfortHeader{
 	background-image: url("img/eattingfish.jpg");
@@ -497,7 +497,7 @@ div.tattooHeader{
 
 form    {
 	margin:0px;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -530,6 +530,8 @@ input    {
 	resize: none;
 	width: 460px;
 }
+
+
 
 /*div.image3{
 	background-image: url("img/legging.jpg");

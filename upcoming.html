@@ -8,11 +8,14 @@
 		<link href='http://fonts.googleapis.com/css?family=Khula:600,400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-		<title>UPCOMING --- POPUPVAN </title>
+		<title> POPUPVAN </title>
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/grid.css">
 	</head>
+
+
+	<body>
 
 
 	<!-- Navagation-->
@@ -26,12 +29,16 @@
 			</ul>
 		</div>
 
-<!-- Upcoming Popups-->
+
+	<!-- Upcoming Popups->
+	<!-- Row 1-->
+		<!--Hey Jude-->	
+		<div id="popup-grid">
 		<section id="upcoming-popups" class="grid">
 		<!--Kinfolk Dinners-->		
 			<div class="col-4of12">
 				<img src="img/kinfolk/tablesetting.jpg" alt="Kinfolk table thumnail">
-		<!--<a href="heyjude.html" class="image-cards">-->
+			<a href="kinfolk.html" class="image-cards">
 					<div class="popup-content-wrapper">
 						<div class="popup-vertical-align">
 							<div class="dates">May 17</div>
@@ -39,37 +46,55 @@
 							<div class="category">Lorem Ipsum doler sit amet.</div>
 						</div>
 					</div>
+			</a>
 			</div>
 
 		<!--Indie Swap-->	
 			<div class="col-4of12">
 				<img src="img/IndieSwap/mintandchopsticks.jpg" alt="Indie Swamp thumbnail">
-		<!--<a href="heyjude.html" class="image-cards">-->
+			<a href="indieswap.html" class="image-cards">
 					<div class="popup-content-wrapper">
 						<div class="popup-vertical-align">
-							<div class="dates">Mar 17</div>
+							<div class="dates">May 3</div>
 							<div class="title">East Van Indie Swap</div>
 							<div class="category">Lorem Ipsum doler sit amet.</div>
 						</div>
 					</div>
+			</a>
 			</div>
 
 		<!--Chef Juno Kim x 33 Acres-->			
 			<div class="col-4of12">
 				<img src="img/33AcresJuno/chefjunokim1.jpg" alt="Juno Kim Thumbnail">
-		<!--<a href="heyjude.html" class="image-cards">-->
+			<a href="33acresjuno.html" class="image-cards">
 					<div class="popup-content-wrapper">
 						<div class="popup-vertical-align">
-							<div class="dates">March 2015</div>
+							<div class="dates">Jun 2015</div>
 							<div class="title">Chef Juno Kim x 33 Acres</div>
 							<div class="category">Monday night dinner series.</div>
 						</div>
 					</div>
+			</a>		
 			</div>
+
 		</section>
+		</div>
 
 
+		<!-- jQuery and Packery for grid sorting -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!-- old, don't think we need this. switched to packery <script src="js/masonry.min.js"></script> -->
+		<script src="js/packery.min.js"></script>
 		
-	
-</body>
+		<script>
+			// use this container for sorting elements	
+			var $container = $('#popup-grid');
+			// initialize, run packery
+			$container.packery({
+				// look for elements to sort with this selector
+				itemSelector: '.col-4of12'
+			});
+		</script>
+		
+	</body>
 </html>

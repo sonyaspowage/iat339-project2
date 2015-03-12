@@ -30,41 +30,77 @@
 	<!-- Form -->
 
 	<section id="checkout" class="grid">
-	<div class="col-6of12">
-
+	
 	<h1> Buyer Information </h1>	
 		<form>
+
 			<div class="input-wrapper">
-				First Name: <input type="text" name="username">
+				First Name: <input type="text" name="firstName">
 			</div>	
 
 			<div class="input-wrapper">
-				Last Name: <input type="text" name="username">
+				Last Name: <input type="text" name="lastName">
 			</div>	
 
 			<div class="input-wrapper">
-				Email Address: <input type="text" name="username">
+				Email Address: <input type="text" name="email">
 			</div>	
 
 			<div class="input-wrapper">
-				Confirm Email: <input type="text" name="username">
+				Confirm Email: <input type="text" name="email">
 			</div>	
 		</form>
-	</div>
+
 		
-	<div class="col-6of12">
+
 	<h1> Payment</h1>	
 		<form>
 			<div class="input-wrapper">
-				Credit Card: <input type="text" name="username">
+				Credit Card: 
+			<select name="selectCard">
+   				 <option value="Type" selected>Select a card type</option>
+   				 <option value="Saturday">Visa</option>
+				 <option value="Sunday">Mastercard</option>
+ 			 </select>
 			</div>	
 
 			<div class="input-wrapper">
-				Credit Card Number: <input type="text" name="username">
+				Credit Card Number: <input type="text" name="number">
 			</div>	
 
 			<div class="input-wrapper">
-				Expiration Date: <input type="text" name="username">
+				Expiration Date: 
+				<select name="selectCard">
+   					 <option value="Month" selected>Month</option>
+   					 <option value="Jan">01</option>
+					 <option value="Feb">02</option>
+					 <option value="Mar">03</option>
+					 <option value="Apr">04</option>
+					 <option value="May">05</option>
+					 <option value="June">06</option>
+					 <option value="July">07</option>
+					 <option value="Aug">08</option>
+					 <option value="Sept">09</option>
+					 <option value="Oct">10</option>
+					 <option value="Nov">11</option>
+					 <option value="Dec">12</option>
+ 			 </select>
+
+ 			 <select name="Year">
+   					 <option value="Month" selected>Year</option>
+   					 <option value="Year">2015</option>
+					 <option value="Year">2016</option>
+					 <option value="Year">2015</option>
+					 <option value="Year">2016</option>
+					 <option value="Year">2015</option>
+					 <option value="Year">2016</option>
+					 <option value="Year">2015</option>
+					 <option value="Year">2016</option>
+					 <option value="Year">2015</option>
+					 <option value="Year">2016</option>
+ 			 </select>
+
+ 			CVV: <input type="text" name="CVV">
 			</div>	
 		</form>
 
@@ -80,7 +116,7 @@
 			</div>	
 
 			<div class="input-wrapper">
-				City: 
+				City: &nbsp;
 				<input type="text" name="username">
 			</div>	
 
@@ -94,7 +130,7 @@
 
 			<input type="submit" value="Submit">
 		</form>	
-	</div>	
+
 
 	</section>
 
